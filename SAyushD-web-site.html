@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 10 Study Hub</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #fdfcf7;
+      color: #2c2c2c;
+    }
+
+    header {
+      background: linear-gradient(90deg, #5c8d89, #35524a);
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    header h1 { font-size: 2rem; font-weight: 600; }
+    nav { margin-top: 10px; }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #ffe082; }
+
+    main { padding: 20px; max-width: 900px; margin: auto; }
+    section { margin-bottom: 40px; }
+    section h2 {
+      margin-bottom: 15px;
+      font-size: 1.6rem;
+      color: #35524a;
+      border-bottom: 2px solid #e0ddd5;
+      padding-bottom: 5px;
+      font-weight: 600;
+    }
+
+    /* Search container */
+    .search-container {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    #searchBox {
+      flex: 1;
+      padding: 12px;
+      border: 2px solid #5c8d89;
+      border-radius: 8px;
+      font-size: 1rem;
+      outline: none;
+      transition: 0.3s;
+    }
+    #searchBox:focus {
+      border-color: #35524a;
+      box-shadow: 0 0 6px rgba(92,141,137,0.4);
+    }
+
+    #clearBtn {
+      background: #5c8d89;
+      border: none;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+      display: none; /* hidden by default */
+    }
+    #clearBtn:hover {
+      background: #35524a;
+    }
+
+    details {
+      background: #e6efe7;
+      margin: 12px 0;
+      padding: 12px 16px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      transition: all 0.3s ease-in-out;
+    }
+    details[open] {
+      background: #dde8df;
+      transform: scale(1.01);
+    }
+
+    details summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: #2c2c2c;
+      list-style: none;
+      font-size: 1.1rem;
+    }
+
+    details a {
+      display: block;
+      margin: 6px 0 0 15px;
+      text-decoration: none;
+      color: #2c2c2c;
+      padding: 4px 6px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    details a:hover {
+      background: #cfe6d7;
+      color: #000;
+    }
+
+    /* Highlight for matches */
+    .highlight {
+      background: #fff59d;
+      padding: 0 3px;
+      border-radius: 3px;
+    }
+
+    footer {
+      background: #35524a;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      border-top: 3px solid #5c8d89;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      nav a { display: block; margin: 8px 0; }
+      .search-container { flex-direction: column; }
+      #clearBtn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Class 10 Study Hub</h1>
+    <nav>
+      <a href="#materials">Study Materials</a>
+      <a href="#links">Useful Links</a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=s.ayushdhiman@gmail.com" target="_blank">ASK QUERIES</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Study Materials Section -->
+    <section id="materials">
+      <h2>📘 Subject-Wise Study Materials</h2>
+
+      <!-- Search Bar + Clear Button -->
+      <div class="search-container">
+        <input type="text" id="searchBox" placeholder="🔍 Search for a chapter or subject...">
+        <button id="clearBtn">Clear</button>
+      </div>
+
+      <!-- Maths -->
+      <details>
+        <summary>Mathematics</summary>
+        <a href="https://www.learncbse.in/ncert-solutions-class-10-maths-chapter-1/" target="_blank">Chapter 1: Real Numbers</a>
+        <a href="https://www.learncbse.in/ncert-solutions-class-10-maths-chapter-2/" target="_blank">Chapter 2: Polynomials</a>
+        <a href="https://www.learncbse.in/ncert-solutions-class-10-maths-chapter-3/" target="_blank">Chapter 3: Pair of Linear Equations</a>
+        <a href="https://www.learncbse.in/ncert-solutions-class-10-maths-chapter-4/" target="_blank">Chapter 4: Quadratic Equations</a>
+        <a href="https://www.learncbse.in/ncert-solutions-class-10-maths/" target="_blank">All Chapters (Full Book)</a>
+      </details>
+
+      <!-- Science -->
+      <details>
+        <summary>Science</summary>
+        <a href="https://www.learncbse.in/ncert-solutions-class-10-science-chapter-1/" target="_blank">Chapter 1: Chemical Reactions</a>
+        <a href="https://www.learncbse.in/ncert-solutions-class-10-science-chapter-2/" target="_blank">Chapter 2: Acids, Bases, and Salts</a>
+        <a href="https://www.learncbse.in/ncert-solutions-class-10-science-chapter-3/" target="_blank">Chapter 3: Metals and Non-Metals</a>
+        <a href="https://www.learncbse.in/ncert-solutions-class-10-science-chapter-4/" target="_blank">Chapter 4: Carbon Compounds</a>
+        <a href="https://www.learncbse.in/ncert-solutions-class-10-science/" target="_blank">All Chapters (Full Book)</a>
+      </details>
+
+      <!-- Social Science -->
+      <details>
+        <summary>Social Science</summary>
+        <a href="https://www.learncbse.in/ncert-solutions-class-10-social-science-history/" target="_blank">History: NCERT Solutions</a>
+        <a href="https://www.learncbse.in/ncert-solutions-class-10-social-science-geography/" target="_blank">Geography: NCERT Solutions</a>
+        <a href="https://www.learncbse.in/ncert-solutions-class-10-social-science-political-science/" target="_blank">Political Science: NCERT Solutions</a>
+        <a href="https://www.learncbse.in/ncert-solutions-class-10-social-science-economics/" target="_blank">Economics: NCERT Solutions</a>
+      </details>
+
+      <!-- English -->
+      <details>
+        <summary>English</summary>
+        <a href="https://www.learncbse.in/ncert-solutions-class-10-english-first-flight/" target="_blank">First Flight (Prose & Poetry)</a>
+        <a href="https://www.learncbse.in/ncert-solutions-class-10-english-footprints-without-feet/" target="_blank">Footprints Without Feet</a>
+        <a href="https://www.learncbse.in/ncert-solutions-for-class-10-english/" target="_blank">All Chapters & Summaries</a>
+      </details>
+    </section>
+
+    <!-- Useful Links Section -->
+    <section id="links">
+      <h2>🔗 Useful Study Links</h2>
+      <ul>
+        <li><a href="https://ncert.nic.in" target="_blank">NCERT Official Website</a></li>
+        <li><a href="https://cbseacademic.nic.in" target="_blank">CBSE Academic Portal</a></li>
+        <li><a href="https://khanacademy.org" target="_blank">Khan Academy</a></li>
+        <li><a href="https://byjus.com" target="_blank">BYJU'S Learning</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Class 10 Study Hub | BY AYUSH DHIMAN
+  </footer>
+
+  <!-- Search Function -->
+  <script>
+    const searchBox = document.getElementById("searchBox");
+    const clearBtn = document.getElementById("clearBtn");
+
+    function performSearch() {
+      let filter = searchBox.value.toLowerCase();
+      let subjects = document.querySelectorAll("#materials details");
+
+      subjects.forEach(subject => {
+        let summary = subject.querySelector("summary");
+        let links = subject.querySelectorAll("a");
+        let matchFound = false;
+
+        summary.innerHTML = summary.textContent;
+
+        if (summary.textContent.toLowerCase().includes(filter) && filter !== "") {
+          let regex = new RegExp("(" + filter + ")", "gi");
+          summary.innerHTML = summary.textContent.replace(regex, "<span class='highlight'>$1</span>");
+          matchFound = true;
+        }
+
+        links.forEach(link => {
+          let text = link.textContent.toLowerCase();
+          link.innerHTML = link.textContent;
+
+          if (text.includes(filter) && filter !== "") {
+            let regex = new RegExp("(" + filter + ")", "gi");
+            link.innerHTML = link.textContent.replace(regex, "<span class='highlight'>$1</span>");
+            link.style.display = "block";
+            matchFound = true;
+          } else if (filter === "") {
+            link.style.display = "block";
+          } else {
+            link.style.display = "none";
+          }
+        });
+
+        subject.open = matchFound;
+        if (filter === "") subject.open = false;
+      });
+
+      clearBtn.style.display = filter ? "block" : "none";
+    }
+
+    searchBox.addEventListener("keyup", performSearch);
+
+    clearBtn.addEventListener("click", () => {
+      searchBox.value = "";
+      performSearch();
+    });
+  </script>
+</body>
+</html>
